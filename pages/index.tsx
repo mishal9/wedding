@@ -142,7 +142,7 @@ export default function WeddingMicrosite(): React.JSX.Element {
                 referrerPolicy="no-referrer-when-downgrade"
                 // Replace with your actual venue embed
                 src={
-                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.901274280385!2d-73.968!3d40.7831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ2JzU5LjIiTiA3M8KwNTgnMDQuOCJX!5e0!3m2!1sen!2sus!4v1715555555555"
+                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.7875103739148!2d73.19861201120304!3d22.36165084058331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fcec39ff45793%3A0x79fa9e5bbda7549f!2sBanyan%20Paradise%20Resort%20(%20Best%20Wedding%20Venue%20In%20Vadodara%20)!5e0!3m2!1sen!2sus!4v1756873465789!5m2!1sen!2sus"
                 }
               />
             </CardContent>
