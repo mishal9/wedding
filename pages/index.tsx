@@ -37,7 +37,7 @@ function formToRSVP(fd: FormData): RSVPData {
 /** ---------- Page ---------- */
 export default function WeddingMicrosite(): React.JSX.Element {
   // Change to your real date/time
-  const targetDate = useMemo(() => new Date("2026-02-14T17:00:00-05:00"), []);
+  const targetDate = useMemo(() => new Date("2025-11-27T17:00:00-05:00"), []);
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -58,7 +58,7 @@ export default function WeddingMicrosite(): React.JSX.Element {
           <p className="mt-4 text-lg md:text-xl text-slate-600">We’re getting married — and you’re invited.</p>
           <div className="mt-6 flex items-center justify-center gap-4 text-slate-600">
             <div className="flex items-center gap-2">
-              <Calendar className="h-5 w-5" /> <span>Feb 14, 2026</span>
+              <Calendar className="h-5 w-5" /> <span>Nov 27, 2025</span>
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="h-5 w-5" /> <span>New York, NY</span>
@@ -85,7 +85,7 @@ export default function WeddingMicrosite(): React.JSX.Element {
           {[
             { year: "2019", title: "We met", text: "Met at a hackathon; argued about tabs vs spaces; sparks flew." },
             { year: "2023", title: "Said yes", text: "A quiet sunrise proposal. She said yes before coffee." },
-            { year: "2026", title: "Tying the knot", text: "Come celebrate with us — dress sharp, dance harder." },
+            { year: "2025", title: "Tying the knot", text: "Come celebrate with us — dress sharp, dance harder." },
           ].map((x, i) => (
             <Card key={i} className="rounded-2xl shadow-sm">
               <CardContent className="p-6">
@@ -183,10 +183,16 @@ export default function WeddingMicrosite(): React.JSX.Element {
             <CardContent className="p-6">
               <div className="font-semibold">Playlist</div>
               <p className="mt-2 text-sm text-slate-600">Add a song you want to hear on the dance floor.</p>
-              <div className="mt-4 aspect-video w-full bg-slate-100 rounded-xl grid place-items-center text-slate-500">
-                <div className="flex items-center gap-2">
-                  <Music className="h-5 w-5" /> Spotify embed goes here
-                </div>
+              <div className="mt-4 w-full">
+                <iframe 
+                  style={{borderRadius: '12px'}} 
+                  src="https://open.spotify.com/embed/playlist/37i9dQZF1DXaXB8fQg7xif?utm_source=generator" 
+                  width="100%" 
+                  height="352" 
+                  frameBorder="0" 
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                  loading="lazy">
+                </iframe>
               </div>
             </CardContent>
           </Card>
