@@ -61,7 +61,7 @@ export default function WeddingMicrosite(): React.JSX.Element {
               <Calendar className="h-5 w-5" /> <span>Nov 27, 2025</span>
             </div>
             <div className="flex items-center gap-2">
-              <MapPin className="h-5 w-5" /> <span>New York, NY</span>
+              <MapPin className="h-5 w-5" /> <span>Vadodara, Gujarat, India</span>
             </div>
           </div>
           <Countdown targetDate={targetDate} />
